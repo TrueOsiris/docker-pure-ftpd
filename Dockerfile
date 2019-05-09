@@ -60,7 +60,7 @@ RUN apt-mark hold pure-ftpd pure-ftpd-common
 
 # setup ftpgroup and ftpuser
 RUN groupadd ftpgroup &&\
-	useradd -g ftpgroup -d /home/ftpusers -s /dev/null ftpuser
+	useradd -g ftpgroup -d /home/ftpusers -s /dev/null ftp
 
 # configure rsyslog logging
 RUN echo "" >> /etc/rsyslog.conf && \
